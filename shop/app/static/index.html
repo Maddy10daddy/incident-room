@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marigold Market</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="dot"></span> Marigold Market</div>
+    <div id="who" class="who" hidden></div>
+  </header>
+
+  <main>
+    <section id="signin" class="card signin">
+      <h1>Sign in</h1>
+      <p class="muted">Demo accounts use the password <code>demo123</code>.</p>
+      <form id="form" autocomplete="off">
+        <label for="username">Username</label>
+        <input id="username" name="username" value="erin" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" value="demo123" required>
+        <div class="chips" aria-label="Quick fill">
+          <button type="button" data-u="alice">alice (returning)</button>
+          <button type="button" data-u="erin">erin (new customer)</button>
+        </div>
+        <button id="submit" class="primary" type="submit">Sign in</button>
+        <p id="msg" class="msg" role="alert" hidden></p>
+      </form>
+    </section>
+
+    <section id="account" hidden>
+      <div class="card welcome">
+        <h1 id="hello"></h1>
+        <p class="muted" id="prev"></p>
+        <button id="signout" class="link">Sign out</button>
+      </div>
+      <div class="grid">
+        <article class="product"><div class="swatch s1"></div><h3>Marigold honey</h3><p>$9.50</p></article>
+        <article class="product"><div class="swatch s2"></div><h3>Clay teapot</h3><p>$32.00</p></article>
+        <article class="product"><div class="swatch s3"></div><h3>Linen apron</h3><p>$24.00</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot"><span id="ver">version …</span> · <a href="http://localhost:8090" target="_blank" rel="noopener">ops panel</a></footer>
+  <script src="/app.js"></script>
+</body>
+</html>

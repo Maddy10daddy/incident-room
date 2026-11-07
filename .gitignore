@@ -1,0 +1,5 @@
+run/
+__pycache__/
+*.pyc
+sentinel/.sentinel.env
+.DS_Store
